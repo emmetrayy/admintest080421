@@ -1,0 +1,18 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+//create user and schema - einfaches model
+const radioSchema = new Schema({
+    radioname: String,
+    radiourl: String,
+    nowplayingurl: String,
+    radiocountry: String,
+    radiolanguage: String,
+    securecontent: []
+});
+
+
+//im model wird die collection definiert, in dem fall testusers
+const Radio = mongoose.model('radio', radioSchema);
+
+module.exports = Radio;
