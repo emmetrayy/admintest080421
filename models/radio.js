@@ -8,7 +8,8 @@ const radioSchema = new Schema({
     nowplayingurl: String,
     radiocountry: String,
     radiolanguage: String,
-    securecontent: []
+    securecontent: [],
+    comments: []
 });
 
 
